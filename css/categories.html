@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./categories.css" />
+    <title>CAFE</title>
+  </head>
+  <body>
+    <!-- Navbar starts here  -->
+    <section id="nav-bar">
+      <div class="container">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="../images/My_Logo.webp" alt="Tasty cafe logo" />
+          </a>
+        </div>
+        <div class="menu text-right">
+          <ul class="sidebar">
+            <li onclick="hideSidebar()" class="close">
+              <img src="../images/icons8-close-window-50.png" alt="" />
+            </li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./categories.html">Categories</a></li>
+            <li><a href="./order.html">Order</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./categories.html">Categories</a></li>
+            <li><a href="./order.html">Order</a></li>
+          </ul>
+          <div onclick="showSidebar()" class="hamburger">
+            <img src="../images/icons8-menu-24.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navbar ends   -->
+
+    <!-- Explore food section begins-->
+    <section id="explore">
+      <div class="explore">
+        <div class="ex-top">
+          <h1>Explore Food</h1>
+        </div>
+        <div class="ex-bottom">
+          <div class="f-img">
+            <img src="../images/objects.jpg" alt="" />
+            <!-- <h3>Jollof Rice</h3> -->
+          </div>
+          <div class="f-img">
+            <img src="../images/food (2).jpg" alt="" />
+            <!-- <h3>Assorted Fried Rice</h3> -->
+          </div>
+          <div class="f-img">
+            <img src="../images/food.jpg" alt="" />
+            <!-- <h3>Waakye</h3> -->
+          </div>
+          <div class="f-img">
+            <img src="../images/food (2).jpg" alt="" />
+            <!-- <h3>Steak</h3> -->
+          </div>
+          <div class="f-img">
+            <img src="../images/food (1).jpg" alt="" />
+            <!-- <h3>Salad</h3> -->
+          </div>
+          <div class="f-img">
+            <img src="../images/objects.jpg" alt="" />
+            <!-- <h3>Pizza</h3> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Explore food section endss  -->
+
+    <!-- footer starts here  -->
+    <footer id="footer">
+      <div class="social-banner">
+        <div class="social-items">
+          <div class="social-item">
+            <img src="../images/icons8-facebook-48.png" alt="" />
+          </div>
+          <div class="social-item">
+            <img src="../images/icons8-linkedin-48.png" alt="" />
+          </div>
+          <div class="social-item"><img src="../images/icons8-instagram-64.png" alt="" /></div>
+        </div>
+      </div>
+      <p>Copyright &copy; 2024 DC. made with &#x1F496;.</p>
+    </footer>
+
+    <!-- footer ends here  -->
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

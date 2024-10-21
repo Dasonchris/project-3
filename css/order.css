@@ -1,0 +1,354 @@
+#order{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+}
+
+#order h1{
+    color: aliceblue;
+    font-size: 90%;
+    font-family: cursive;
+}
+
+#order .selected-meal{
+    /* background-color: aqua; */
+    padding: 2em;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#order .order-card{
+    display: flex;
+    background-color: gray;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 3em; */
+    width: 50%;
+    height: fit-content;
+    border-radius: 0 .5em .5em .5em;
+}
+
+#order .meal-img{
+    width: 40%;
+    margin: .5em;
+}
+
+#order .meal-img img{
+    padding: .4em 0;
+    border-radius: 1em;
+
+}
+
+#order .order-quantity{
+    width: 60%;
+    padding: 1em;
+}
+
+#order .order-quantity form{
+    width: 100%;
+    margin: 1em 0;
+}
+
+#order .order-quantity form input{
+    width: 100%;
+    height: 2.5em;
+    padding: .5em;
+    border: aliceblue solid 0.1em;
+    height: 3em;
+    background-color: rgb(230, 234, 240);
+    border-radius: .5em;
+}
+
+#order .order-quantity h5{
+    font-size: 1.2em;
+    margin: 1em o;
+}
+
+#order .a-header{
+    width: 50%;
+}
+
+#order .b-title{
+    top: 1em;
+    background-color:gray;
+    width: fit-content;
+    padding: 1em 1em -0.5em 1em;
+    border-radius: .2em .2em 0em 0em;
+    font-size: 50%;
+
+}
+
+#order .delivery-info{
+    /* background-color: aqua; */
+    padding: 2em;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#order .delivery-form{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding: 2em;
+    align-items: center;
+    width: 50%;
+    height: fit-content;
+    border-radius: 0 .5em .5em .5em;
+}
+
+#order .delivery-form form{
+    width: 80%;
+    margin: .5em;
+}
+
+#order .delivery-form form input{
+    /* margin: 2em; */
+    padding: .5em;
+    border: aliceblue solid 0.1em;
+    width: 100%;
+    height: 3em;
+    background-color: rgb(230, 234, 240);
+    border-radius: .5em;
+    text-wrap: wrap;
+}
+
+/* #order .delivery-form form(){
+    height: 50em;
+    background-color: aqua;
+} */
+
+#order .delivery-form h5{
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+#order .delivery-form .addy{
+    min-height: 12em;
+    padding-top: 0;
+    padding-bottom: 7em;
+}
+
+#order .delivery-form .addy::placeholder{
+    text-wrap: wrap;
+}
+
+#order .delivery-form button{
+    background-color: rgb(75, 75, 110);
+    padding: .7em;
+    width: 40%;
+    border: none;
+    border-radius: .5em;
+    margin-top: 1em;
+
+}
+
+
+#order .delivery-form button a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 100%;
+}
+
+
+img{
+    width: 100%;
+}
+
+
+/* Media Queries  */
+
+/* 
+  ##Device = Most Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+#order{
+    padding: 10%;
+}
+
+  #order .order-card{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+ #order .selected-meal , #order .delivery-info {
+    width: 100%;
+    padding: 1em 1%;
+}
+
+#order .order-quantity {
+    max-width: 40em;
+}
+
+#order .a-header{
+    width: 100%;
+}
+
+#order .b-title{
+    align-self: flex-start;
+}
+  
+
+#order .delivery-form{
+    width: 100% ;
+}
+
+#order .delivery-info form input , #order .delivery-info form{
+     max-width: 45em;
+}
+
+#order .meal-img{
+    width: 65%;
+}
+
+#order .delivery-form form{
+    width: 100%;
+}
+
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+ ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+
+    #order{
+    padding: 10%;
+}
+
+  #order .order-card{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+ #order .selected-meal , #order .delivery-info {
+    width: 100%;
+    padding: 1em 1%;
+}
+
+#order .order-quantity {
+    max-width: 40em;
+}
+
+#order .a-header{
+    width: 100%;
+}
+
+#order .b-title{
+    align-self: flex-start;
+}
+  
+
+#order .delivery-form{
+    width: 100% ;
+}
+
+ #order .delivery-info form input , #order .delivery-info form{
+     max-width: 45em;
+} 
+
+#order .meal-img{
+    width: 65%;
+}
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #order{
+    padding: 10%;
+}
+
+  #order .order-card{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+ #order .selected-meal , #order .delivery-info {
+    width: 100%;
+    padding: 1em 1%;
+}
+
+#order .order-quantity {
+    max-width: 40em;
+}
+
+#order .a-header{
+    width: 100%;
+}
+
+#order .b-title{
+    align-self: flex-start;
+}
+  
+
+#order .delivery-form{
+    width: 100% ;
+}
+
+#order .delivery-info form input , #order .delivery-info form{
+   max-width: 45em;
+}
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    #order{
+    padding: 10%;
+}
+
+  #order .order-card{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+ #order .selected-meal , #order .delivery-info {
+    width: 100%;
+    padding: 1em 1%;
+}
+
+#order .order-quantity {
+    max-width: 40em;
+}
+
+#order .a-header{
+    width: 100%;
+}
+
+#order .b-title{
+    align-self: flex-start;
+}
+  
+
+#order .delivery-form{
+    width: 100% ;
+}
+
+#order .delivery-info form input , #order .delivery-info form{
+   max-width: 45em;
+}
+  
+  
+}

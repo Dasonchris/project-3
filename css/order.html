@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Order</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./order.css">
+</head>
+<body>
+    
+     <!-- Navbar starts here  -->
+    
+    <!-- Navbar ends   -->
+             <section id="nav-bar">
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="../images/My_Logo.webp" alt="Tasty cafe logo">
+                </a>
+            </div>
+            <div class="menu text-right">
+                 <ul class="sidebar">
+                  <li onclick=hideSidebar() class="close"><img src="../images/icons8-close-window-50.png" alt=""></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./categories.html">Categories</a></li>
+                    <li><a href="./order.html">Order</a></li>
+                </ul>
+                
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./categories.html">Categories</a></li>
+                    <li><a href="./order.html">Order</a></li>
+                </ul>
+                <div onclick=showSidebar() class="hamburger">
+                  <img src="../images/icons8-menu-24.png" alt="">
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- 0rder section starts here  -->
+    <section id="order">
+        <h1>Fill this form to confirm your order.</h1>
+        <div class="selected-meal">
+            <div class="a-header">
+                <h3 class="b-title">‎ ‎  Selected Meal  ‎ ‎ </h3>
+            </div>
+            <div class="order-card">
+                <div class="meal-img"><img src="../images/food.jpg" alt="">
+                    <div class="meal-info">
+                        <h4>Strawberry with other fruits</h4>
+                    <p>$100.99</p>
+                </div>
+                 </div>
+                <div class="order-quantity">
+                    <h5>Quantity</h5>
+                    <form action="#">
+                        <input type="number" min="1">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="delivery-info">
+                <div class="a-header">
+                    <h3 class="b-title">‎ ‎   Delivery details  ‎ ‎ </h3>
+                </div>
+            <div class="delivery-form">
+                 <h5>Full Name</h5>
+                    <form action="#">
+                        <input type="text" placeholder="John The Bapticts">
+                    </form>
+                    <h5>Phone Number</h5>
+                    <form action="#">
+                        <input type="tel" placeholder="+233 55 8855 233">
+                    </form>
+                    <h5>E-mail</h5>
+                    <form action="#">
+                        <input type="email" placeholder="*******@gmail.com">
+                    </form>
+                    <h5>Address</h5>
+                    <form action="#">
+                        <input class="addy" type="text" placeholder="HO City, Volta.">
+                    </form>
+                    <button><a href="#">Confirm Order</a></button>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+     <!-- order section ends here -->
+
+     <!-- footer starts here  -->
+         <footer id="footer">
+          <div class="social-banner">
+            <div class="social-items">
+              <div class="social-item"><img src="../images/icons8-facebook-48.png" alt=""></div>
+              <div class="social-item"><img src="../images/icons8-linkedin-48.png" alt=""></div>
+              <div class="social-item"><img src="../images/icons8-instagram-64.png" alt=""></div>
+            </div>
+          </div>
+          <p> Copyright &copy; 2024 DC. made with &#x1F496;.</p>
+
+         </footer>
+
+          <!-- footer ends here  -->
+          <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+       function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+
+</body>
+</html>
